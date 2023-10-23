@@ -1,118 +1,125 @@
 function numberRandomizer(){
-    
+    $("div div div").removeClass("visibility")
+    $("div div div").addClass("makeVisible")
+
     var num1 = Math.floor(Math.random() * 6)
     var num2 = Math.floor(Math.random() * 6)
     if (num1>num2){
-        document.querySelector("h1").textContent="←Player 1 Wins"
+        $("h1").text("←Player 1 Wins")
     }
     else if (num1<num2){
-        document.querySelector("h1").textContent="Player 2 Wins→"
+        $("h1").text("Player 2 Wins→")
     }
     else if (num1===num2){
-        document.querySelector("h1").textContent="Draw!!"
+        $("h1").text("Draw!!")
     }
         
         function dice1uno(){
-            document.querySelector(".uno .one").classList.toggle("visibility")
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .three").classList.toggle("visibility")
-            document.querySelector(".uno .four").classList.toggle("visibility")
-            document.querySelector(".uno .six").classList.toggle("visibility")
-            document.querySelector(".uno .seven").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")
-            document.querySelector(".uno .nine").classList.toggle("visibility")
+            $(".uno .one").toggleClass("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .three").toggleClass("visibility")
+            $(".uno .four").toggleClass("visibility")
+            $(".uno .six").toggleClass("visibility")
+            $(".uno .seven").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")
+            $(".uno .nine").toggleClass("visibility")
         }
         function dice2uno(){
-            document.querySelector(".uno .one").classList.toggle("visibility")
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .five").classList.toggle("visibility")
-            document.querySelector(".uno .four").classList.toggle("visibility")
-            document.querySelector(".uno .six").classList.toggle("visibility")
-            document.querySelector(".uno .nine").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")
+            $(".uno .one").toggleClass("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .five").toggleClass("visibility")
+            $(".uno .four").toggleClass("visibility")
+            $(".uno .six").toggleClass("visibility")
+            $(".uno .nine").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")
         }
         function dice3uno(){
-            document.querySelector(".uno .one").classList.toggle("visibility")
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .four").classList.toggle("visibility")
-            document.querySelector(".uno .six").classList.toggle("visibility")
-            document.querySelector(".uno .nine").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")  
+            $(".uno .one").toggleClass("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .four").toggleClass("visibility")
+            $(".uno .six").toggleClass("visibility")
+            $(".uno .nine").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")  
         }
         function dice4uno(){
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .four").classList.toggle("visibility")
-            document.querySelector(".uno .five").classList.toggle("visibility")
-            document.querySelector(".uno .six").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .four").toggleClass("visibility")
+            $(".uno .five").toggleClass("visibility")
+            $(".uno .six").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")
         }
         function dice5uno(){
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .four").classList.toggle("visibility")
-            document.querySelector(".uno .six").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .four").toggleClass("visibility")
+            $(".uno .six").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")
         }
         function dice6uno(){
-            document.querySelector(".uno .two").classList.toggle("visibility")
-            document.querySelector(".uno .five").classList.toggle("visibility")
-            document.querySelector(".uno .eight").classList.toggle("visibility")
+            $(".uno .two").toggleClass("visibility")
+            $(".uno .five").toggleClass("visibility")
+            $(".uno .eight").toggleClass("visibility")
         }
         
         
         function dice1dos(){
-            document.querySelector(".dos .one").classList.toggle("visibility")
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .three").classList.toggle("visibility")
-            document.querySelector(".dos .four").classList.toggle("visibility")
-            document.querySelector(".dos .six").classList.toggle("visibility")
-            document.querySelector(".dos .seven").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")
-            document.querySelector(".dos .nine").classList.toggle("visibility")
+            $(".dos .one").toggleClass("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .three").toggleClass("visibility")
+            $(".dos .four").toggleClass("visibility")
+            $(".dos .six").toggleClass("visibility")
+            $(".dos .seven").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")
+            $(".dos .nine").toggleClass("visibility")
         }
         function dice2dos(){
-            document.querySelector(".dos .one").classList.toggle("visibility")
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .five").classList.toggle("visibility")
-            document.querySelector(".dos .four").classList.toggle("visibility")
-            document.querySelector(".dos .six").classList.toggle("visibility")
-            document.querySelector(".dos .nine").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")
+            $(".dos .one").toggleClass("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .five").toggleClass("visibility")
+            $(".dos .four").toggleClass("visibility")
+            $(".dos .six").toggleClass("visibility")
+            $(".dos .nine").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")
         }
         function dice3dos(){
-            document.querySelector(".dos .one").classList.toggle("visibility")
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .four").classList.toggle("visibility")
-            document.querySelector(".dos .six").classList.toggle("visibility")
-            document.querySelector(".dos .nine").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")  
+            $(".dos .one").toggleClass("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .four").toggleClass("visibility")
+            $(".dos .six").toggleClass("visibility")
+            $(".dos .nine").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")  
         }
         function dice4dos(){
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .four").classList.toggle("visibility")
-            document.querySelector(".dos .five").classList.toggle("visibility")
-            document.querySelector(".dos .six").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .four").toggleClass("visibility")
+            $(".dos .five").toggleClass("visibility")
+            $(".dos .six").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")
         }
         function dice5dos(){
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .four").classList.toggle("visibility")
-            document.querySelector(".dos .six").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .four").toggleClass("visibility")
+            $(".dos .six").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")
         }
         function dice6dos(){
-            document.querySelector(".dos .two").classList.toggle("visibility")
-            document.querySelector(".dos .five").classList.toggle("visibility")
-            document.querySelector(".dos .eight").classList.toggle("visibility")
+            $(".dos .two").toggleClass("visibility")
+            $(".dos .five").toggleClass("visibility")
+            $(".dos .eight").toggleClass("visibility")
         }
 
 var A = [dice1uno, dice2uno, dice3uno, dice4uno, dice5uno, dice6uno]
 var B = [dice1dos, dice2dos, dice3dos, dice4dos, dice5dos, dice6dos]
 
+
+
+// $("div div div").addClass("makeVisible")
 function roll(){
     A[num1]()
     B[num2]()
 }
-roll()
+
+    roll()
+    $("div div div").removeClass("makeVisible")    
 }
 
-numberRandomizer()
+// numberRandomizer()
